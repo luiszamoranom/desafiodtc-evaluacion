@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/desafiodtc_backend.styles.css" asp-append-version="true"/>
 </head>
-<body>
-<header>
+<body class="container-app">
+<header class="container-barra-navegacion">
     <nav>
         <p>Barra de navegación</p>
     </nav>
 </header>
-<div class="container">
-    <main role="main" class="pb-3">
+<div class="container-contenido">
+    <main role="main">
         @RenderBody()
     </main>
 </div>
 
-<footer>
+<footer class="container-footer">
     <p>Footer</p>
 </footer>
 

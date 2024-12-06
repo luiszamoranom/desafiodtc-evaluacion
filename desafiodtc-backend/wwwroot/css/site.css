@@ -1,22 +1,47 @@
-html {
-  font-size: 14px;
+.container-app{
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.container-barra-navegacion{
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 10vh;
+  max-height: 10vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.container-contenido{
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 90vh;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
+.container-footer{
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 10vh;
+  max-height: 10vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
