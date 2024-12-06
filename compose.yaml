@@ -1,0 +1,6 @@
+﻿services:
+  desafiodtc-backend:
+    image: desafiodtc-backend
+    build:
+      context: .
+      dockerfile: desafiodtc-backend/Dockerfile

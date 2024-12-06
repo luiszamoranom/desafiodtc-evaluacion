@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desafiodtc-backend", "desafiodtc-backend\desafiodtc-backend.csproj", "{A71796E2-8C94-42BA-AB62-8CEED5CE6827}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C65D4AD8-41C4-47D5-8D78-7BB1C16F4243}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A71796E2-8C94-42BA-AB62-8CEED5CE6827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A71796E2-8C94-42BA-AB62-8CEED5CE6827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A71796E2-8C94-42BA-AB62-8CEED5CE6827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A71796E2-8C94-42BA-AB62-8CEED5CE6827}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
