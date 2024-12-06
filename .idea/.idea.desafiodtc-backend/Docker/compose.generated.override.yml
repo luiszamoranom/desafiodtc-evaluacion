@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  desafiodtc:
+    build:
+      context: "/Users/luiszamorano/RiderProjects/desafiodtc-backend"
+      dockerfile: "desafiodtc-backend/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/desafiodtc-backend.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/desafiodtc-backend.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "desafiodtc-backend:dev"
+    ports: []
+    volumes:
+    - "/Users/luiszamorano/RiderProjects/desafiodtc-backend/desafiodtc-backend:/app:rw"
+    - "/Users/luiszamorano/RiderProjects/desafiodtc-backend:/src:rw"
+    - "/Users/luiszamorano/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"

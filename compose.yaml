@@ -1,6 +1,24 @@
 ﻿services:
-  desafiodtc-backend:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared
+    command: tunnel run e8422924-f71f-428c-a144-7fdc2ca71413
+    env_file:
+      - .env|
+    restart: always
+    networks:
+      - cloudflared_app
+    
+  desafiodtc:
     image: desafiodtc-backend
     build:
       context: .
       dockerfile: desafiodtc-backend/Dockerfile
+    networks:
+      - cloudflared_app
+    ports:
+      - "8080:8080"
+
+networks:
+  cloudflared_app:
+    driver: bridge
